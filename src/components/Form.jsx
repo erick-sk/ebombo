@@ -106,6 +106,7 @@ const Form = ({ createUser }) => {
 						maxLength="9"
 						id="tel"
 						name="tel"
+						pattern="[0-9]*"
 						placeholder="Your number phone"
 						onChange={handleChange}
 						value={tel}
@@ -124,6 +125,7 @@ const Form = ({ createUser }) => {
 					name="birthday"
 					onChange={handleChange}
 					value={birthday}
+					max="2002-12-31"
 				/>
 			</FormControl>
 
